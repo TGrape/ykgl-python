@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jquery图片放大滑过显示放大图片自适应浏览器图片放大</title>
+<meta name="description" content="jquery图片放大鼠标滑过显示放大图片，当浏览器宽度不够时，自适应判断浏览器图片放大显示。支持文字图片放大等。jQuery下载。" />
+</head>
+
+<body>
+<style type="text/css">
+*{margin:0;padding:0;}
+a,img{border:0;}
+ul,li{list-style-type:none;}
+/* demo */
+.demo{width:600px;margin:40px auto;}
+.demo h2{font-size:14px;height:62px;color:#3366cc;}
+.demo a{font-size:14px;color:#333;text-decoration:none;}
+.demo a img{border:solid 1px #ddd;margin:0 5px;}
+/* previewShowWindow */
+.previewShowWindow{position:absolute;border:1px solid #dadade;background:#95959d;padding:5px;display:none;color:#fff;text-align:center;z-index:999;}
+</style>
+
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/preview.js"></script>
+<script type="text/javascript">
+$(function(){
+	if($('a.preview').length){
+		var img = preloadIm();
+		imagePreview(img);
+	}
+})
+</script>
+
+<div class="demo">
+	<h2>jquery鼠标滑过显示放大图片 自适应浏览器显示</h2>
+	<a target="_blank" href="http://www.xwcms.net/" path="images/2e30ea83a8246e76f3a7ac81f2c7b46c.jpg" class="preview"><img width="150" height="150" alt="jquery图片放大插件鼠标滑过图片放大效果" src="images/small2e30ea83a8246e76f3a7ac81f2c7b46c.jpg" /></a>
+	
+	<a target="_blank" href="http://www.xwcms.net/" path="images/c21fccfeebda4b9c694616f947f56e05.jpg" class="preview"><img width="150" height="150" alt="jquery图片放大镜插件制作多种图片放大查看效果" src="images/smallc21fccfeebda4b9c694616f947f56e05.jpg" /></a>
+	
+	<a target="_blank" href="http://www.xwcms.net/" path="images/761e64dd86a7ebd0919c18d0c04ebabb.jpg" class="preview"><img height="150" width="150" alt="jquery 图片放大镜仿苹果视网膜效应的jQuery和CSS" src="images/small761e64dd86a7ebd0919c18d0c04ebabb.jpg" /></a>
+</div>
+
+<div class="demo">
+	<a path="images/be830324916476d709ef7f1e547042d0.jpg" class="preview" href="http://www.xwcms.net/">jquery选项卡插件制作标签标题内容slider滑动切换特效</a><Br /><Br />
+	<a path="images/39c118198047e3b7da820d162e71a4c1.jpg" class="preview" href="http://www.xwcms.net/">jquery tab选项卡插件 轻量级tab选项卡插件支持鼠标滑过、点击、自动切换、数据回调等功能</a>
+</div>
+
+</body>
+</html>
